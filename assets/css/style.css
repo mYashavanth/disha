@@ -2993,8 +2993,8 @@ img.blurred {
 
 /* Carousal Section start */
 .carousalSection{
-    /* border: 1px solid black; */
-    padding: 40px 100px;
+    border: 1px solid black;
+    padding: 40px 0px 40px 140px;
 }
 .carouselSection-owl{
     margin-top: 60px;
@@ -3003,7 +3003,7 @@ img.blurred {
     /* border: 1px solid black; */
     position: relative;
     /* width: 548px; */
-    margin-right: 24px;
+    margin-right: 40px;
     height: 600px;
     padding: 40px;
     color: #fff;
