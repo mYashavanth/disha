@@ -94,7 +94,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-left: 0%;
 }
 
-    .accordion-button:not(.collapsed)::after {
+.accordion-button:not(.collapsed)::after {
      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff%0A' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E") !important;
 }
 @font-face{
@@ -113,6 +113,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  }
  .erstoriaFont.color{
     color: #4D111D;
+ }
+ .accordion-button{
+  /* border: 1px solid black; */
+  outline: none;
+  box-shadow: none;
+ }
+ .accordion-button:not(.collapsed){
+   /* border: 1px solid black; */
+   box-shadow: none !important;
+   background: #832033 !important;
+   color: white !important;
+  }
+  .accordion-button:not(.collapsed) .acrd_p1, .accordion-button:not(.collapsed) .acrd_p2{
+    color: white !important;
+  }
+ .accordion-button:focus{
+  box-shadow: none !important;
+  /* border: 1px solid #832033; */
  }
   </style>
 <!-- Meta Pixel Code -->
@@ -460,7 +478,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="">
             <!-- <h6 class="sc2_bg_h6">Where life is like a never ending vacation.</h6> -->
             <h2 class=" erstoriaFont color">WHERE LIFE IS LIKE A NEVER ENDING VACATION.</h2>
-            <img src="assets/img/mbl_sc2_img_001.jpg" class="img-fluid mbl_sc2_img_01 d-block d-sm-none">
+            <img src="assets/img/sc2_img_01.png" class="img-fluid mbl_sc2_img_01 d-block d-sm-none">
             <div class="sc2_p_blk mt-4">
               <p class="sc2_p1">Tucked away in the peaceful landscapes of North Bangalore, DeFiner Dolce Vita offers
                  a select range of 3 & 4 bedroom duplex homes, redefining luxury living. Here, life feels like a 
@@ -935,16 +953,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-lg-12">
           <div class="d-flex">
             <div class="">
-              <h6 class="sc6_bg_h6">AMENITIES</h6>
-              <h2 class="sc6_h2">AMENITIES</h2>
-              <p class="sc6_p1">Pursuit of the Elements boasts an impressive array of amenities, ensuring that every
+              <!-- <h6 class="sc6_bg_h6">AMENITIES</h6> -->
+              <h2 class="erstoriaFont color">Amenities Tailored for Every Life Chapter</h2>
+              <!-- <p class="sc6_p1">Pursuit of the Elements boasts an impressive array of amenities, ensuring that every
                 resident enjoys a wholesome lifestyle
-              </p>
+              </p> -->
             </div>
-            <div class="d-none d-md-block">
+            <!-- <div class="d-none d-md-block">
               <a class="sc6_btn" href="brochure.pdf" download="brochure.pdf" data-bs-toggle="modal"
               data-bs-target="#exampleModal1">Download Brochure <i class="bi bi-arrow-up-right"></i> </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1011,7 +1029,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
               aria-expanded="true" aria-controls="collapseOne">
-              <span class="acrd_p1">For You </span><span class="acrd_p2">+ Children</span>
+              <span class="acrd_p1">For You </span><span class="acrd_p2">+ Your Little Ones</span>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -1020,10 +1038,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="row">
                 <div class="col-md-6">
                   <ul class="">
-                    <li>Dance Studio</li>
-                    <li>Music room</li>
-                    <li>Study Room</li>
-                    <li>Library</li>
+                    <li>Adventure Play Areas</li>
+                    <li>Creative Art & Learning Zones</li>
+                    <li>Life-Sized Floor Games</li>
+                    <li>Skating Track</li>
                   </ul>
                 </div>
                 <div class="col-md-6">
@@ -1094,7 +1112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-              <span class="acrd_p1">Just</span><span class="acrd_p2">For You</span>
+              <span class="acrd_p2">Just For You</span>
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -1635,7 +1653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="modal-content">
         <div class="modal-header">
           <div class="d-flex justify-content-between">
-            <img src="assets/img/mdl_frm_logo.png" class="img-fluid frm-logo">
+            <img src="assets/img/logo.png" class="img-fluid frm-logo" style="width: 177px; height: 68px;">
           </div>
           <div class="">
             <h6 class="mdl_hdr_h1">Enquire Now</h6>
