@@ -1334,7 +1334,7 @@ input[type="color"]:focus,
 
   /***sc13***/
   .sc13 {
-    background: #051f33;
+    background: #4d111d;
     padding: 10px 10px;
     height: 121px;
     text-align: center;
@@ -1384,7 +1384,11 @@ input[type="color"]:focus,
 
   /***mbl-ftr***/
   .mbl_ftr {
-    background: #135774;
+    background: linear-gradient(
+        to right,
+        rgba(179, 41, 78, 0.8),
+        rgba(179, 41, 78, 0.8)
+      ),;
     padding-top: 5%;
     padding-bottom: 1%;
     margin-top: 0%;
@@ -2614,13 +2618,13 @@ input[type="color"]:focus,
 
   #htb .nav-link.active {
     border-radius: 45px;
-    background: #051f33;
+    background: #832033;
     color: #fff;
   }
 
   #htb .nav-link:hover {
     border-radius: 45px;
-    background: #051f33;
+    background: #832033;
     color: #fff;
   }
 
@@ -3064,19 +3068,25 @@ input[type="color"]:focus,
   border-radius: 20px;
   /* border: 1px solid black; */
 }
+.sc10_top{
+  /* border: 1px solid black;   */
+  padding: 124px 148px 0px;
+ }
+ .sc10_top h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 36px;
+ }
+ .sc10_top p{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px;
+ }
 
 /* Carousal Section2 End */
 
 @media (max-width: 768px) {
-  .carousalSection {
-    padding: 20px;
-  }
-  .carouselSection-owl .item {
-    margin-right: 0;
-    padding: 16px;
-  }
-}
-@media (max-width: 480px) {
   .carousalSection {
     padding: 20px;
   }
@@ -3109,4 +3119,56 @@ input[type="color"]:focus,
     width: 764px;
     height: auto;
   }
+}
+@media (max-width: 480px) {
+  .carousalSection {
+    padding: 20px;
+  }
+  .carouselSection-owl .item {
+    margin-right: 0;
+    padding: 16px;
+  }
+  
+  .carousalSection2_textConten h1 {
+  color: #4d111d;
+  font-size: 40px;
+}
+.carousalSection2_textConten h5 {
+  font-size: 24px;
+}
+  .carousalSection2 {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .carouselSection-owl-2 .item {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 24px;
+    gap: 20px;
+  }
+  .carouselSection-owl-2 .item-content {
+    width: 100%;
+    min-height: auto;
+  }
+  .carouselSection-owl-2 .item-content div {
+    padding: 0px;
+  }
+  .carouselSection-owl-2 .item-image {
+    height: auto;
+  }
+  .carouselSection-owl-2 img {
+    width: 764px;
+    height: auto;
+  }
+
+  .sc10_top{
+  /* border: 1px solid black;   */
+  padding: 16px;
+ }
+ .sc10_top h2{
+  font-size: 32px;
+ }
+ .sc10_top p{
+  font-size: 20px;
+ }
 }
